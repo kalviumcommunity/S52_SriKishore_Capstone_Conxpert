@@ -41,7 +41,7 @@ To run Conxpert locally, follow these simple steps:
 - Express.js
 - MongoDB
 - HTML/CSS
-- Bootstrap
+- Tailwind
 
 ## Contributing 🙌
 
