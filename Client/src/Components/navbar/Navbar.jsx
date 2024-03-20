@@ -5,7 +5,7 @@ const Navbar = () => {
             <nav className="mt-3 flex items-center justify-evenly">
                 <div className="flex items-center   ">
                     <img className="h-auto w-20 md:w-22 lg:w-20 xl:w-50" src="./assets/conxpert_logo1.svg" alt="logo" />
-                    <h1><span className="text-2xl lg:text-3xl font-bold pt-1font-display">CON</span><span className="text-3xl font-gray font-display">X</span><span className="text-2xl lg:text-3xl font-bold pt-1font-display">PERT</span></h1>
+                    <h1><span className="text-2xl lg:text-3xl font-bold pt-1font-display">CON</span><span className="text-3xl font-gray font-display">X</span><span className="text-2xl lg:text-3xl font-bold pt-1 font-display">PERT</span></h1>
                 </div>
 
                 <div className="hidden lg:flex gap-8 text-sm font-semibold cursor-pointer justify-center items-center">
