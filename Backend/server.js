@@ -8,6 +8,8 @@ app.get('/',(req,res)=>{
     res.json({message:"Capstone Project"})
 })
 
-app.listen(process.env.PORT || 5000,()=>{
-    console.log("Server Listening to port",process.env.PORT)
+const port = process.env.PORT || 5000;
+
+app.listen(port,()=>{
+    console.log("Server Listening to port",port)
 })
