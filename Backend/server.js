@@ -1,15 +1,30 @@
-const express = require('express');
-const app = express();
-require('dotenv').config();
+import express from 'express';
+import cookieParser from 'cookie-parser';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import mongoose from 'mongoose';
 
-app.use(express.json())
 
-app.get('/',(req,res)=>{    
-    res.json({message:"Capstone Project"})
+dotenv.config();
+
+const app  = express();
+
+const port = process.env.PORT || 8000;
+
+const corsOptions={
+    origin:true
+}
+
+//middleware
+app.use(express.json());
+app.use(cookieParser())
+app.use(cors(corsOptions));
+
+
+app.get('/',(req,res)=>{
+    res.send("Api is working")
 })
 
-const port = process.env.PORT || 5000;
-
 app.listen(port,()=>{
-    console.log("Server Listening to port",port)
+    console.log("server is running on the port " + port)
 })
