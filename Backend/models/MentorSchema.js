@@ -5,7 +5,8 @@ const MentorSchema = new mongoose.Schema(
         email:{
             type:String,
             required:true,
-            unique:true
+            unique:true,
+            match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
         },
         password:{
             type:String,
@@ -16,7 +17,7 @@ const MentorSchema = new mongoose.Schema(
             required:true
         },
         phone:{
-            type:Number
+            type:String
         },
         photo:{
             type:String
@@ -55,7 +56,7 @@ const MentorSchema = new mongoose.Schema(
             ref:"Review"
         },
         averageRating:{
-            types:Number,
+            type:Number,
             default:0
         },
         totalRating:{
