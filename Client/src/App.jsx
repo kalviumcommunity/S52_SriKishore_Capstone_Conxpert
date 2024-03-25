@@ -1,11 +1,23 @@
-import Home from "./Components/home/Home";
+// import Home from "./Components/home/Home";
+
+// function App() {
+//   return (
+//     <div className="h-full">
+//       <Home/>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+
+
+import './App.css'
+import Layout from './layout/Layout';
 
 function App() {
-  return (
-    <div className="h-full">
-      <Home/>
-    </div>
-  )
+  return <Layout/>;
 }
 
 export default App;
