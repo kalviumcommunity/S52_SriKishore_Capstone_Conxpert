@@ -6,3 +6,56 @@
 @tailwind utilities;
 
 
+@layer base{
+    section{
+        @apply py-[75px];
+    }
+}
+
+@layer components{
+    .container{
+        @apply max-w-full w-[1440px] mx-auto ;
+    }
+    .btn{
+        @apply bg-buttonColor py-[15px] px-[35px] rounded-[3px] text-white font-[600] mt-[25px];
+    }
+    .heading{
+        @apply text-[44px] leading-[54px] font-[700] text-headingColor;
+    }
+    .text_para{
+        @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
+    }
+    .text_para2{
+        @apply text-[17px] leading-[30px] font-[400] text-textColor mt-[18px] lg:w-[550px]
+    }
+    .text_para1{
+        @apply w-[140px] text-[15px] font-[400] text-textColor mt-[13px];
+    }
+    .header{
+        @apply bg-webColor1 w-full h-[80px];
+    }
+    .hero_section{
+        @apply bg-webColor1 w-full lg:h-[100vh];
+    }
+}
+
+
+@media only screen and (max-width:1024px){
+    .container{
+        @apply w-full;
+    }
+    section{
+        @apply py-[35px];
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .heading{
+        @apply text-[26px] leading-[36px];
+    }
+    .text_para{
+        @apply text-[16px] leading-7 mt-3;
+    }
+}
+
+
