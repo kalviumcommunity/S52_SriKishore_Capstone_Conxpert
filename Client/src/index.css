@@ -14,13 +14,13 @@
 
 @layer components{
     .container{
-        @apply max-w-full w-[1440px] mx-auto ;
+        @apply max-w-full w-[1440px] mx-auto;
     }
     .btn{
         @apply bg-buttonColor py-[15px] px-[35px] rounded-[3px] text-white font-[600] mt-[25px];
     }
     .heading{
-        @apply text-[44px] leading-[54px] font-[700] text-headingColor;
+        @apply text-[30px] leading-[54px] font-[700] text-headingColor;
     }
     .text_para{
         @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
@@ -35,7 +35,16 @@
         @apply bg-webColor1 w-full h-[80px];
     }
     .hero_section{
-        @apply bg-webColor1 w-full lg:h-[100vh];
+        @apply bg-webColor1 w-full lg:h-[87vh];
+    }
+    .hero_section2{
+        @apply bg-buttonColor w-full lg:h-auto;
+    }
+    .navTwo{
+        @apply text-textColor text-[14px] leading-7 font-[600] cursor-pointer hover:text-primaryColor;
+    }
+    .detailSection{
+        @apply bg-pinkColor w-full lg:h-auto;
     }
 }
 

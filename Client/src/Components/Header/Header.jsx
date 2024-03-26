@@ -1,5 +1,5 @@
 import logo from '../../../public/assets/conxpert_logo1.svg';
-import userImage from '../../../public/assets/user3.jpg';
+// import userImage from '../../../public/assets/user3.jpg';
 import { NavLink, Link } from 'react-router-dom';
 import { BiMenu } from "react-icons/bi";
 import { useEffect, useRef } from 'react';
