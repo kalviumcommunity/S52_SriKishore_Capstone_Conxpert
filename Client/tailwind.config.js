@@ -9,6 +9,7 @@ export default {
       colors:{
         introColor:'#E65F46',
         primaryColor:'#0067FF',
+        pinkColor:'#FDF3F1',
         yellowColor:'#FEB60D',
         webColor1:"#FFFBF2",
         buttonColor:'#00553C',
