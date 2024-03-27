@@ -46,6 +46,9 @@
     .detailSection{
         @apply bg-pinkColor w-full lg:h-auto;
     }
+    .reviewSection{
+        @apply bg-[#DEF2EB] w-full lg:h-auto;
+    }
 }
 
 
