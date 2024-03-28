@@ -9,6 +9,7 @@ import mentor2 from '../../public/assets/Mentors-images/mentor2.jpg'
 import mentor3 from '../../public/assets/Mentors-images/mentor3.jpg'
 import userPic1 from '../../public/assets/users-pic/user-pic1.jpeg'
 import userPic2 from '../../public/assets/users-pic/user-pic2.jpg'
+// import quotes from '../../public/assets/users-pic/quotes.'
 
 
 
@@ -232,6 +233,7 @@ const Home = () => {
           </div>
 
           <div className='m-[20px] md:w-[30rem] md:p-[40px] rounded-[20px] bg-white shadow shadow-black-800'>
+            {/* <img src={quotes} alt="quotes" /> */}
             <p className='p-[20px] font-[500] text-[#4a4a4a]'>I highly recommend ConXpert's services. The personalized attention and guidance from industry experts made all the difference in my interview preparation.</p>
             <div className='p-[20px] flex items-center gap-[15px]'>
               <img src={userPic1} alt="profile-image" className='h-[40px] w-[40px] md:h-[60px] md:w-[60px] rounded-full object-cover' />

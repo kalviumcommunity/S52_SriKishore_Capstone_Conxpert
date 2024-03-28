@@ -55,7 +55,9 @@ const Header = () => {
         <div className='flex items-center justify-around'>
           {/* =====logo===== */}
           <div className='flex items-center'>
-            <img className='h-[70px] w-[70px]' src={logo} alt="logo" />
+            <Link to="/home">
+            <img className='h-[70px] w-[70px] hover:rotate' src={logo} alt="logo" />
+            </Link>
             {/* <h1>CONXPERT</h1> */}
             <h1 className='-ml-[10px]'><span className="text-2xl lg:text-1xl font-bold pt-1 font-display text-green-900">CON</span><span className="text-2xl lg:text-1xl font-gray font-display text-green-900">X</span><span className="text-2xl lg:text-1xl font-bold pt-1 font-display text-green-900">PERT</span></h1>
           </div>
