@@ -49,6 +49,9 @@
     .reviewSection{
         @apply bg-[#DEF2EB] w-full lg:h-auto;
     }
+    .form_input{
+        @apply w-full px-4 py-3 border border-solid border-[#0066ff51] focus:outline-none focus:border-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer rounded-md
+    }
 
 @keyframes rotate {
     0% {

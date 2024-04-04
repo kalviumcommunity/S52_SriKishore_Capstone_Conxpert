@@ -1,4 +1,4 @@
-import { services } from '../../../public/assets/Data/services'
+import { services } from '../../../public/assets/data/services'
 import ServiceCard from './ServiceCard';
 
 const ServiceList = () => {
