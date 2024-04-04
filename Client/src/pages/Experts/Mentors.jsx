@@ -7,7 +7,7 @@ const Mentors = () => {
   return (
     <>
       <section className='bg-[#FFFBF2]'>
-        <div className='container text-center lg:-mt-[30px]'>
+        <div className='container text-center lg:-mt-[30px] p-[20px] lg:p-[0px]'>
           <h2 className='heading'>Find a Mentor</h2>
           <div className='max-w-[500px] mt-[30px] mx-auto bg-[#0066ff2c] flex rounded-md items-center justify-center'>
             <input type="search" className='py-2 pl-4 pr-2 bg-transparent w-full focus:outline-none cursor-pointer placeholder:text-textColor' placeholder='Search Mentor' />
