@@ -3,6 +3,7 @@ import mentorImg from "../../../public/assets/Mentors-images/mentor1.jpeg"
 import starIcon from '../../../public/assets/Star.png'
 import MentorsAbout from "./MentorsAbout";
 import Feedback from "./Feedback";
+import SidePanel from "./SidePanel";
 
 
 const MentorDetails = () => {
@@ -51,8 +52,13 @@ const MentorDetails = () => {
               {tab==="about" && <MentorsAbout/>}
               {tab==="feedback" && <Feedback/>}
             </div>
-
           </div>
+
+          <div>
+            <SidePanel/>
+          </div>
+
+
         </div>
       </div>
     </section>

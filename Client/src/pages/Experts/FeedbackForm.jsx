@@ -11,6 +11,9 @@ const FeedbackForm = () => {
         e.preventDefault();
     }
 
+    console.log(rating);
+    console.log(hover);
+
     return (
         <form action=''>
             <div>
@@ -19,11 +22,11 @@ const FeedbackForm = () => {
                 </h3>
 
                 <div>
-                    {[...Array(5).keys()].map((_, index) => {
+                    {[...Array(5).keys()].map((_,index) => {
                         index += 1;
 
                         return (
-                            <button key={index} type='button' className={`${index <= ((rating && hover) || hover) ? "text-yellowColor" : "text-gray-400"} bg-transparent border-none outline-none text-[22px] cursor-pointer`} onClick={() => setRating(index)} onMouseEnter={() => setHover(index)} onMouseLeave={() => { setHover(rating) }} onDoubleClick={() => { setHover(0); setRating(0) }}>
+                            <button key={index} type='button' className={`${index <= ((rating && hover) || hover) ? "text-yellowColor" : "text-gray-400"} bg-transparent border-none outline-none text-[22px] cursor-pointer`} onClick={() => {setRating(index)}} onMouseEnter={() => setHover(index)} onMouseLeave={() => {setHover(rating)}} onDoubleClick={() => {setHover(0); setRating(0)}}>
                                 <span>
                                     <AiFillStar />
                                 </span>
