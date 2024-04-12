@@ -5,7 +5,7 @@ import mentorImg03 from "../Mentors-images/mentor3.jpg";
 export const mentors = [
   {
     id: "01",
-    name: "Alexander",
+    name: "Dhana Rooban",
     specialization: "Mock Interview",
     avgRating: 4.8,
     totalRating: 75,

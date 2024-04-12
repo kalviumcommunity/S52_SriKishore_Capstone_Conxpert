@@ -43,7 +43,7 @@ const SidePanel = () => {
 
         </div>
 
-        <button className='btn w-full rounded-md'>Book Appointment</button>
+        <button className='btn w-full rounded-md'>Buy Sessions Now</button>
 
     </div>
   )

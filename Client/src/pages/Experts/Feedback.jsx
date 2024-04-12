@@ -16,7 +16,7 @@ const Feedback = () => {
 
           <div className='flex justify-between gap-10 mb-[30px]'>
             <div className='flex gap-3'>
-              <figure className='w-[8rem] h-[4rem] lg:w-12 lg:h-12 rounded-full'>
+              <figure className='w-[70px] h-[70px] lg:w-[80px] lg:h-[80px] flex-shrink-0 rounded-full'>
                 <img className='w-full h-full object-cover rounded-full' src={avatar} alt="" />
               </figure>
 
@@ -25,16 +25,17 @@ const Feedback = () => {
                 <p className="text-[14px] leading-6 text-textColor">
                   {formatDate("04-09-2024")}
                 </p>
+
+              <div className="flex gap-1 h-fit mt-2">
+              {[...Array(5).keys()].map((_,index)=>(
+                <AiFillStar key={index} color="#0067FF" />
+              ))}
+            </div>
+                
                 <p className="text_para mt-3 font-medium text-[15px]">
                 Invaluable mock interview, highly recommended!
                 </p>
               </div>
-            </div>
-
-            <div className="flex gap-1">
-              {[...Array(5).keys()].map((_,index)=>(
-                <AiFillStar key={index} color="#0067FF" />
-              ))}
             </div>
           </div>
       </div>
