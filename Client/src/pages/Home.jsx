@@ -8,7 +8,7 @@ import mentor1 from '../../public/assets/Mentors-images/mentor1.jpeg'
 import mentor2 from '../../public/assets/Mentors-images/mentor2.jpg'
 import mentor3 from '../../public/assets/Mentors-images/mentor3.jpg'
 import userPic1 from '../../public/assets/users-pic/user-pic1.jpeg'
-import userPic2 from '../../public/assets/users-pic/user-pic2.jpg'
+// import userPic2 from '../../public/assets/users-pic/user-pic2.jpg'
 // import quotes from '../../public/assets/users-pic/quotes.'
 
 
