@@ -1,4 +1,4 @@
-import {mentors} from "../../../public/assets/data/mentors"
+import {mentors} from "./../../public/assets/data/mentors"
 import MentorCard from "./MentorCard";
 
 

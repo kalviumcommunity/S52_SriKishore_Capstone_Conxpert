@@ -1,7 +1,8 @@
-import {mentors} from '../../../public/assets/data/mentors'
+import { mentors } from '../../../public/assets/data/mentors'
 
 import MentorCard from '../../Components/Mentors/MentorCard'
 import testimonials from "../../../public/assets/images/testimonials.jpg"
+import MentorsFilter from './MentorsFilter'
 
 
 const Mentors = () => {
@@ -30,12 +31,23 @@ const Mentors = () => {
       </section>
 
       <section>
+          <h3 className='text-[17px] text-center leading-[50px] font-[700] md:text-[30px] px-[50px] mb-10'><span>63</span> Mentors  available right now</h3>
+
+          <div>
+            <MentorsFilter/>
+          </div>
+
+
+      </section>
+
+      <section className='bg-[#FBFBFB]'>
         <div className="container">
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
+          <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 lg:px-5'>
             {mentors.map((mentor) => <MentorCard key={mentor.id} mentor={mentor} />)}
           </div>
         </div>
       </section>
+
     </>
   )
 }
