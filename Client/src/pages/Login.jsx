@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import loginConxpertLogo from '../../public/assets/loginForm-images/login-conxpert-logo.jpg';
 import { Link } from 'react-router-dom';
+import { GoogleAuthProvider,signInWithPopup } from 'firebase/auth';
+import {auth} from '../../firebase/firebaseConfig.js'
 
 const Login = () => {
 
@@ -12,6 +14,18 @@ const Login = () => {
   const handleInputChange = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
+
+  const handleGoogle = async (e) =>{
+    e.preventDefault();
+    const provider = new GoogleAuthProvider();
+    try {
+      await signInWithPopup(auth, provider);
+    } catch (error) {
+      console.error("Google Sign-In Error: ", error);
+    }
+  };
+
+
 
 
   return (
@@ -41,6 +55,10 @@ const Login = () => {
           <p className='text-[13px] md:text-[15px] mt-5 text-textColor text-center'>
             Don&apos;t have an account? <Link to="/register" className='text-primaryColor ml-1'>Register</Link>
           </p>
+
+          <button onClick={handleGoogle}>
+            Signup with google
+          </button>
 
         </form>
 
