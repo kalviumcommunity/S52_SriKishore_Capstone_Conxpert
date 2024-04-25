@@ -87,7 +87,7 @@ export const login = async(req,res)=>{
             user = mentor;
         }
 
-        //check if uer exists or not
+        //check if user exists or not
 
         if(!user){
             return res.status(404).json({message:"user not found"})
@@ -104,7 +104,7 @@ export const login = async(req,res)=>{
         //get token
         const token = generateToken(user);
 
-        const {password,role,appointments,...rest} = user._doc
+        const {password,role,appointments,...rest} = user._doc;
 
         res.status(200).json({status:true,message:"Successfully login",token,data:{...rest},role})
 
