@@ -20,7 +20,7 @@ const Login = () => {
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, provider);
-    } catch (error) {
+    } catch (error) {                   
       console.error("Google Sign-In Error: ", error);
     }
   };

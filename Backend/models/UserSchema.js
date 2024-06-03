@@ -24,7 +24,7 @@ const UserSchema = new mongoose.Schema(
         role:{
             type:String,
             enum:['mentee','admin'],
-            default:"Mentee"
+            default:'Mentee'
         },
         gender:{
             type:String,
@@ -36,7 +36,7 @@ const UserSchema = new mongoose.Schema(
         appointment:[
             {
                 type:mongoose.Types.ObjectId,
-                ref:"Appointment"
+                ref:'Appointment'
             }
         ]
     }

@@ -6,6 +6,7 @@ import mongoose from 'mongoose';
 import authRoute from './Routes/auth.js'
 import userRoute from './Routes/user.js'
 import mentorRoute from './Routes/mentor.js'
+import reviewRoute from './Routes/reviews.js'
 
 
 dotenv.config();
@@ -25,6 +26,7 @@ app.use(cors(corsOptions));
 app.use('/api/v1/auth',authRoute);
 app.use('/api/v1/users',userRoute);
 app.use('/api/v1/mentors',mentorRoute)
+app.use('/api/v1/reviews',reviewRoute)
 
 
 app.get('/',(req,res)=>{
@@ -32,20 +34,15 @@ app.get('/',(req,res)=>{
 })
 
 mongoose.set('strictQuery',false)
-const connectDB = async()=>{
-    try{
-        await mongoose.connect(process.env.MONGO_URL,{
-            useNewUrlParser:true,
-            useUnifiedTopology: true,
-        })
 
-        console.log('mongoDB database is connected')
+const connectDB = async () => {
+    try {
+      await mongoose.connect(process.env.MONGO_URL);
+      console.log('mongoDB database is connected')
+    } catch (err) {
+      console.log("mongoDB database is connection failed")
     }
-
-    catch(err){
-        console.log("mongoDB database is connection failed")
-    }
-}
+  }
 
 
 app.listen(port,()=>{
