@@ -17,7 +17,7 @@ const MentorSchema = new mongoose.Schema(
             required:true
         },
         phone:{
-            type:String
+            type:Number
         },
         photo:{
             type:String
@@ -51,10 +51,9 @@ const MentorSchema = new mongoose.Schema(
         timeSlots:{
             type:Array
         },
-        reviews:{
-            type:mongoose.Types.ObjectId, //for uniqueness
-            ref:"Review"
-        },
+        
+        reviews: [{ type: mongoose.Types.ObjectId, ref: "Review" }], //mongoose.Types.ObjectId {for uniquness}
+
         averageRating:{
             type:Number,
             default:0
@@ -71,7 +70,7 @@ const MentorSchema = new mongoose.Schema(
         appointments:[
             {
                 type:mongoose.Types.ObjectId,
-                ref:"Appoinment"
+                ref:'Appointment'
             }
         ]
     }
