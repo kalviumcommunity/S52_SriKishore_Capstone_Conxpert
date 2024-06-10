@@ -54,7 +54,6 @@ const Signup = () => {
     setSelectedFile(data.url)
     setFormData({...formData, photo:data.url})
 
-
   }
 
   const sumbitHandler = async event=>{
