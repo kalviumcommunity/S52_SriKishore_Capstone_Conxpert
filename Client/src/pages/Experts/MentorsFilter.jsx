@@ -65,8 +65,8 @@ const MentorsFilter = () => {
   };
 
   return (
-    <div className="flex justify-evenly">
-    <div>
+    <div className="md:flex md:justify-evenly m-[20px]">
+    <div className="mb-[10px] md:mb-[0px]">
       <label className="text-textColor font-[800] text-[15px]">SERVICE:</label>
       <Select
         className="lg:w-[20rem] mt-[8px]"
@@ -79,7 +79,7 @@ const MentorsFilter = () => {
     </div>
 
 
-    <div>
+    <div className="mb-[10px] md:mb-[0px]">
       <label className="text-textColor font-[800] text-[15px]">ROLE:</label>
       <Select
         className="lg:w-[20rem] mt-[8px]"
@@ -92,7 +92,7 @@ const MentorsFilter = () => {
     </div>
 
 
-    <div>
+    <div className="mb-[10px] md:mb-[0px]">
       <label className="text-textColor font-[800] text-[15px]">COMPANY:</label>
       <Select
         className="lg:w-[20rem] mt-[8px]"
